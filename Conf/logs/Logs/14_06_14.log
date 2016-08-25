@@ -1,0 +1,1616 @@
+[ 2014-06-14T08:45:17+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003856s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `pigcms_links` [ RunTime:0.002601s ]
+SQL: SELECT * FROM `pigcms_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000907s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029145s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003252s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\chenyun\php\autosystem\Conf\logs\Cache\Home\921d53177c151344e729eca7c171fe97.php 第 31 行.
+NOTIC: [8] Undefined index:  uid C:\chenyun\php\autosystem\Conf\logs\Cache\Home\921d53177c151344e729eca7c171fe97.php 第 31 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.032447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027360s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.059849s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061645s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.063233s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.064420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005720s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.065643s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2014-06-14T08:45:18+08:00 ] 127.0.0.1 /index.php?g=Home&m=Index&a=about
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003421s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000149s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.021607s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002043s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' C:\chenyun\php\autosystem\Conf\logs\Cache\Home\e7d61e041e9387b0e1a6f735393bd64f.php 第 31 行.
+NOTIC: [8] Undefined index:  uid C:\chenyun\php\autosystem\Conf\logs\Cache\Home\e7d61e041e9387b0e1a6f735393bd64f.php 第 31 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017464s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041203s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042243s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.043256s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.044165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003630s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.044896s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2014-06-14T08:45:25+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003486s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.001013s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003007s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000245s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400221440' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000784s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039530s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002703s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015662s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058014s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059625s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061233s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.062681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005570s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063643s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2014-06-14T08:45:26+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001757s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002805s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000298s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002184s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000246s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400407620' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000435s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029873s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001779s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.031698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010459s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042200s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.043250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.044336s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.045301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003731s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.046004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2014-06-14T08:45:27+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002891s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000253s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003434s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000273s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400407680' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031418s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001684s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.033152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011014s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.044213s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.045502s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.046658s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.047718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004243s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.048530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2014-06-14T08:45:28+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001889s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003236s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000279s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002379s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000212s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400408280' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042282s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001707s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010121s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054196s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055280s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056260s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003533s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057792s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2014-06-14T08:45:29+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002933s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000294s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002871s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000345s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400408880' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040174s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001867s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010714s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.052883s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.053887s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054998s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003623s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056568s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2014-06-14T08:45:30+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003018s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000255s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002406s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000221s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400409480' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037733s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001628s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011937s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.051396s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.052508s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.053664s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.054703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003973s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055432s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2014-06-14T08:45:31+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002732s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000284s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002465s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000211s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400410080' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039433s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001706s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010393s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.051625s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.052813s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.053990s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.054925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004025s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055743s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2014-06-14T08:45:32+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002802s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000293s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003149s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000238s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400641320' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033620s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001615s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.035279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010653s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.045975s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.046940s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.047897s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.048765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003406s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.049442s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2014-06-14T08:45:34+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003152s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000292s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002834s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000227s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400653620' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.030282s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001620s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.031946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010747s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042736s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.043726s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.044720s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.045579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003727s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.046606s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2014-06-14T08:45:35+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002879s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000265s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002293s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000203s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400805360' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045248s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001687s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.046980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011696s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058722s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059735s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061217s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.062269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004219s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063019s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2014-06-14T08:45:36+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000343s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002302s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000230s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1400820180' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041867s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002017s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010969s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054949s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056080s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057125s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.058135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003817s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.058831s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2014-06-14T08:45:37+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003460s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000272s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002211s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000213s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401021960' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039469s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002129s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011024s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.052719s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.053775s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054773s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003540s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056327s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2014-06-14T08:45:38+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003309s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000300s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002337s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000234s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401180180' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042570s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001816s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011730s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.056220s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.057402s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.058389s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003611s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.059891s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2014-06-14T08:45:39+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003185s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000308s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002315s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000230s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401254340' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039866s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001670s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011737s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053393s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054429s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055378s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003660s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057126s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2014-06-14T08:45:40+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003464s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000441s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002270s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000206s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401254520' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042876s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001645s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014038s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058652s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059707s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061015s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005831s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064616s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2014-06-14T08:45:41+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003304s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000301s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002613s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000278s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401322320' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034581s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001779s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.036444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010797s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047272s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048300s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.049303s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.050224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003577s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050917s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2014-06-14T08:45:42+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003964s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000303s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002466s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000269s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401322380' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033192s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001661s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012737s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047687s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048945s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.050215s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.051269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004233s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.051989s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2014-06-14T08:45:44+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003480s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000444s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002709s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000221s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401322440' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032417s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001625s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010918s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.045054s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.046067s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.047307s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.048368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004137s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.049273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2014-06-14T08:45:45+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004107s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000517s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003069s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000237s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401322500' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000359s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037654s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002088s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012381s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.052229s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.053196s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054149s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003348s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055636s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2014-06-14T08:45:46+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003724s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000341s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003820s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000326s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401339660' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048166s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001619s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.049831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011621s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061501s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.062526s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.063546s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.064454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003647s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.065216s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2014-06-14T08:45:47+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004120s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000302s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002339s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000247s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401339720' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045591s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001779s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010837s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058299s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059326s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.060342s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003537s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.061910s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2014-06-14T08:45:48+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003248s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000300s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002273s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000201s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401770820' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042466s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001643s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012206s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.056411s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.057495s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.058568s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004060s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2014-06-14T08:45:49+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003525s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000593s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002435s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000200s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401771660' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033572s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001682s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.035306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010807s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.046154s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.047106s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.048112s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003748s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050026s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2014-06-14T08:45:50+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003269s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000272s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002723s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000186s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401771720' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032767s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001578s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010342s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.044850s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.046076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.047259s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.048646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004489s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.049431s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001445s ]
+
+[ 2014-06-14T08:45:51+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004424s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000326s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002469s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000228s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401771780' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037715s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001665s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012008s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.051511s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.052537s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.053566s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.054442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003552s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055112s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001221s ]
+
+[ 2014-06-14T08:45:52+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003728s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000506s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002421s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000183s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401771840' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032928s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001596s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012304s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.046924s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.047934s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.048940s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003499s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050498s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2014-06-14T08:45:53+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003932s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000247s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002677s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000258s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401771900' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032743s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001945s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012988s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047817s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.049394s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.050794s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.051683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004475s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052346s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2014-06-14T08:45:55+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003090s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000297s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003311s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000176s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401771960' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039689s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002282s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011879s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054029s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055335s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056420s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004319s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.058419s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2014-06-14T08:45:56+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003615s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000328s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002328s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000172s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401772020' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037167s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001725s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010929s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049954s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051015s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.052004s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003621s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2014-06-14T08:45:57+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004035s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000546s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002326s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000202s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401772080' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000435s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039825s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002702s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010807s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053441s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054400s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055610s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004143s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057712s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001556s ]
+
+[ 2014-06-14T08:45:58+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003868s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000260s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002417s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000211s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401772140' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036194s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001700s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.037963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011367s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049352s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.050408s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051399s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003491s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052902s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2014-06-14T08:45:59+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001831s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004362s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000347s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003420s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000314s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401772200' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043674s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001655s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016066s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061541s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.063161s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.064790s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.067289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006857s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.068524s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001668s ]
+
+[ 2014-06-14T08:46:01+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003950s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000287s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002278s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000195s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401772260' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.047062s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001675s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.048787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015061s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.063931s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.065230s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.066420s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.067455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004147s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.068141s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2014-06-14T08:46:02+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004156s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000271s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002775s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000158s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401804660' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048924s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001620s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011817s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.062450s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.063781s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.064969s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.065877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004056s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.066573s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2014-06-14T08:46:03+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004328s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000239s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002349s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000210s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401804720' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036470s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001649s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011647s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049856s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.050903s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051918s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003519s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053470s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2014-06-14T08:46:04+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002775s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000243s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002869s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000201s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401804840' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038649s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001768s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.040469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012219s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.052729s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.053680s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054682s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003732s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001523s ]
+
+[ 2014-06-14T08:46:05+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002768s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000299s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002536s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000257s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401882480' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034638s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001705s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.036391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011821s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.048300s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.049600s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.050737s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.051592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003881s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052216s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2014-06-14T08:46:06+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003012s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000319s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002240s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000208s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401882540' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046702s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001627s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.048394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011714s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.060194s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061458s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062528s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004027s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064334s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2014-06-14T08:46:08+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002231s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003510s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000317s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002384s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000205s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401979020' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000447s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046443s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001874s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.048370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012646s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061062s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.062114s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.063256s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.064115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003651s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064776s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2014-06-14T08:46:09+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003363s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004684s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000292s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003359s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000244s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401979080' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.057481s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003955s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.061552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016009s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077608s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.079245s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.080857s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005912s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083649s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002478s ]
+
+[ 2014-06-14T08:46:10+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003129s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000322s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002532s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000201s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401979440' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034616s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001706s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.036391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014336s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.050775s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.052127s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.053222s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.054140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004016s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.054846s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2014-06-14T08:46:11+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003583s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000356s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003588s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000282s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401979500' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036808s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002494s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015347s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054767s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056246s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005323s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060242s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001876s ]
+
+[ 2014-06-14T08:46:12+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004036s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000298s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003413s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000267s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401979560' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000249s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045551s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002632s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.048242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011234s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.059551s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.060902s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061926s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.062818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003842s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063492s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001581s ]
+
+[ 2014-06-14T08:46:13+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002014s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004131s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000307s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003440s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000435s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401979620' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038136s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001810s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.040015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015582s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.055634s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056790s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.058344s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004983s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060745s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001905s ]
+
+[ 2014-06-14T08:46:14+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002936s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000293s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002183s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000181s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1401983220' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032503s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001616s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012316s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.046530s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.047552s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.048566s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003513s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050101s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2014-06-14T08:46:15+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003266s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000323s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.005500s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000228s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402048020' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039922s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001652s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011652s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053329s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054404s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055462s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003687s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057089s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2014-06-14T08:46:17+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001880s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003158s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000271s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002679s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000271s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402108860' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045575s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001644s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010858s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058173s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059221s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.060312s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003680s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.061924s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2014-06-14T08:46:18+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002887s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000260s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002510s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000189s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402238220' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000400s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.035517s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001982s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.037533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011858s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049446s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.050596s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051695s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003977s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053495s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2014-06-14T08:46:19+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004183s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000433s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002283s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000201s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402238280' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000396s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040247s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001951s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012063s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054361s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055619s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056760s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003886s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.058313s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2014-06-14T08:46:20+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004358s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000634s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.003193s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000199s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402238340' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044520s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001746s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.046346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012063s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058471s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059843s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061052s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.062273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004516s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063053s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2014-06-14T08:46:21+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002442s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.004223s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000339s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002489s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000203s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402238400' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042213s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001750s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011363s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.055427s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056814s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.058416s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005321s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2014-06-14T08:46:22+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003584s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000261s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002404s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000189s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402446480' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000415s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044180s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002854s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017223s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.064351s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.065407s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.066583s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.068668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005379s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.069892s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002599s ]
+
+[ 2014-06-14T08:46:24+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.003305s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000259s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002370s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000195s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402446540' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036136s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001668s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.037853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011130s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049030s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.050122s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051247s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003744s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052846s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2014-06-14T08:46:25+08:00 ] 127.0.0.1 /index.php?g=User&m=Cr&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `pigcms_agent` [ RunTime:0.002992s ]
+SQL: SELECT * FROM `pigcms_agent` WHERE ( `siteurl` = 'http://auto.xingboke.com' ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: CREATE TABLE IF NOT EXISTS `tp_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000445s ]
+NOTIC: [2] mysql_num_rows(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result(): supplied argument is not a valid MySQL result resource C:\chenyun\php\autosystem\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `pigcms_system_info` [ RunTime:0.002403s ]
+SQL: SELECT * FROM `pigcms_system_info` LIMIT 1   [ RunTime:0.000183s ]
+SQL: UPDATE `pigcms_system_info` SET `lastsqlupdate`='1402653900' WHERE lastsqlupdate=0 or lastsqlupdate>0 [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: row C:\chenyun\php\autosystem\PigCms\Lib\Action\User\CrAction.class.php 第 110 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040146s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001850s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011653s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053746s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054826s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056627s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005192s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.059050s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001345s ]
+

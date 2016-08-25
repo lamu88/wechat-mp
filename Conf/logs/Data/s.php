@@ -1,0 +1,1 @@
+<?php	return array ( 'token' => 'cedgjq1439951515', 'wecha_id' => 'oJ41ouCKMD1B3gcik5yZboisjWbM', 'to' => 'frined', 'module' => 'Sentiment', 'moduleid' => 0, 'time' => 1439992322, 'url' => 'http://weixin.imakebe.com/index.php?g=Wap&amp;amp;m=Sentiment&amp;amp;a=index&amp;amp;token=cedgjq1439951515&amp;amp;id=4&amp;amp;share_key=d07649177ac8c4336745a5c9a9e0e00f', ); ?>

@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>站点配置</title>
+<link href="{pigcms::RES}/images/main.css" type="text/css" rel="stylesheet">
+<script src="./tpl/static/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="./tpl/static/artDialog/jquery.artDialog.js?skin=default" type="text/javascript"></script>
+<script>
+var dialog;
+function showSetting(module,text){
+	dialog = $.dialog({
+		title:text+' 支付配置：',
+		content:document.getElementById(module+'_setting'),
+		lock:true,
+		ok:function(){
+			dialog.close();
+			$('.form').submit();
+		}
+	});
+}
+</script>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+</head>
+<body class="warp">
+<style>
+.set_top{background:url('{pigcms::RES}/images/set_top.png');height:60px;}
+.set_top li{font-weight: bold;float:left;width:98px;line-height:60px;text-align: center;background:url('{pigcms::RES}/images/set_top_li.png');}
+#set_top_li_bg{background:url('{pigcms::RES}/images/set_top_li_hover.png');}
+
+.pay_setting{margin:10px 0;padding:10px;border: 1px solid #ccc;}
+#addn{margin:0 auto;padding: 20px;}
+.setting_rows p{margin-top:10px;}
+.setting_rows span{width:100px;display:inline-block;_display:inline;text-align:right;}
+.setting_rows input{width:250px;}
+.hidden{display:none;}
+#artlist td img{vertical-align:middle;border:1px solid #ccc;width:60px;height:30px;margin-right:10px;}
+.a_choose{
+margin-left:20px;
+border: 1px solid #3d810c;
+box-shadow: 0 1px #CCCCCC;
+-moz-box-shadow: 0 1px #CCCCCC;
+-webkit-box-shadow: 0 1px #CCCCCC;
+cursor: pointer;
+display: inline-block;
+text-align: center;
+vertical-align: bottom;
+overflow: visible;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+vertical-align: middle;
+background-color: #f1f1f1;
+background-image: -webkit-linear-gradient(bottom, #CCC 0%, #E5E5E5 3%, #FFF 97%, #FFF 100%);
+background-image: -moz-linear-gradient(bottom, #CCC 0%, #E5E5E5 3%, #FFF 97%, #FFF 100%);
+background-image: -ms-linear-gradient(bottom, #CCC 0%, #E5E5E5 3%, #FFF 97%, #FFF 100%);
+color: #000;
+border: 1px solid #AAA;
+padding: 2px 8px 2px 8px;
+text-shadow: 0 1px #FFFFFF;
+font-size: 14px;
+line-height: 1.5;
+}
+#artlist{background:white;}
+.px{height:17px;line-height:17px;padding:2px 4px;background-color: #ffffff;border-radius: 2px 2px 2px 2px;border: 1px solid;border-color: #848484 #E0E0E0 #E0E0E0 #848484;}
+.btnGreen{    display: inline-block;    padding: 2px 12px;    margin-bottom: 0;    font-size: 14px;    font-weight: normal;    text-align: center;    white-space: nowrap;    vertical-align: middle;    -ms-touch-action: manipulation;    touch-action: manipulation;    cursor: pointer;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;    background-image: none;    border: 1px solid transparent;    border-radius: 4px;    background-color: #44b549;    border-color: #44b549;    color: #FFFFFF;	background-image: none !important;    border: none !important;    text-shadow: none !important;    margin-left: 5px;    padding: 2px 8px !important;    cursor: pointer !important;    display: inline-block !important;    overflow: visible !important;    border-radius: 2px !important;    -moz-border-radius: 2px !important;    -webkit-border-radius: 2px !important;    color: #fff !important;    font-size: 14px !important;    line-height: 1.5 !important;}
+</style>
+<include file="Site:public" />
+<div id="artlist">
+<form id="myform" action="{pigcms::U('Site/insert')}" method="post" class="form">
+	<table width="80%" border="0" cellspacing="0" cellpadding="0" id="addn">
+		<tr> 
+			<td  height="48" align="left"><strong>平台支付：</strong></td>
+			<td>
+				<select name="platform_open" id="pay_type">
+					<option value="1"<?php if (C('platform_open')==1){echo ' selected';}?>>开启</option>
+					<option value="0"<?php if (C('platform_open')==0){echo ' selected';}?>>关闭</option>
+				</select>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开启后，若公众号没有开通此支付方式。用户将可以使用此方法进行支付。</span>
+			</td>
+		</tr>
+		<tr> 
+			<td align="left"><strong><img src="{pigcms:$staticPath}/tpl/static/pay_icon/weixin.png"/>微信支付：</strong></td>
+			<td>
+				<div class="pay_setting">
+					<div>
+						<input type="radio" name="platform_weixin_open" id="open_weixin_yes" value="1" <if condition="C('platform_weixin_open') eq 1">checked="checked"</if>/>&nbsp;<label for="open_weixin_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="platform_weixin_open" id="open_weixin_no" value="0" <if condition="C('platform_weixin_open') eq 0">checked="checked"</if>/>&nbsp;<label for="open_weixin_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="###" onclick="showSetting('weixin','微信');" class="a_choose">配置信息</a>
+					</div>
+					<div class="hidden" id="weixin_setting">
+						<div class="setting_rows">
+							<!--p><span>Appid：</span><input type="text" name="platform_weixin_appid" value="{pigcms::C('platform_weixin_appid')}" class="px" /></p>
+							<p><span>Appsecret：</span><input type="text" name="platform_weixin_appsecret" value="{pigcms::C('platform_weixin_appsecret')}" class="px" /></p-->
+							<p>
+								<span>微支付商户号：</span>
+								<?php
+									$platform_weixin_mchid = C('platform_weixin_mchid');
+									$platform_weixin_mchid_s = substr($platform_weixin_mchid, 0, 2);
+									$platform_weixin_mchid_s .= '*************************'.substr($platform_weixin_mchid, -2);
+								?>
+								<span class="platform_weixin_mchid" style="<?php if(!$platform_weixin_mchid){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_weixin_mchid_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_weixin_mchid').hide();$('.platform_weixin_mchid-edit').show();$('input[name=\'platform_weixin_mchid\']').val('');">修改</span>
+								</span>
+								<span class="platform_weixin_mchid-edit" style="<?php if($platform_weixin_mchid){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_weixin_mchid" value="{pigcms:$platform_weixin_mchid}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_weixin_mchid').show();$('.platform_weixin_mchid-edit').hide();$('input[name=\'platform_weixin_mchid\']').val('{pigcms:$platform_weixin_mchid}');">显示</span>
+								</span>
+							</p>
+							<p>
+								<span>API密钥：</span>
+								<?php
+									$platform_weixin_key = C('platform_weixin_key');
+									$platform_weixin_key_s = substr($platform_weixin_key, 0, 2);
+									$platform_weixin_key_s .= '*************************'.substr($platform_weixin_key, -2);
+								?>
+								<span class="platform_weixin_key" style="<?php if(!$platform_weixin_key){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_weixin_key_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_weixin_key').hide();$('.platform_weixin_key-edit').show();$('input[name=\'platform_weixin_key\']').val('');">修改</span>
+								</span>
+								<span class="platform_weixin_key-edit" style="<?php if($platform_weixin_key){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_weixin_key" value="{pigcms:$platform_weixin_key}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_weixin_key').show();$('.platform_weixin_key-edit').hide();$('input[name=\'platform_weixin_key\']').val('{pigcms:$platform_weixin_key}');">显示</span>
+								</span>
+							</p>
+							<p style="color:red;">注：这里填写的信息与基本设置中应用ID和应用秘钥是来自同一微信公众号的！</p>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr> 
+			<td align="left"><strong><img src="{pigcms:$staticPath}/tpl/static/pay_icon/alipay.png"/>支付宝：</strong></td>
+			<td>
+				<div class="pay_setting">
+					<div>
+						<input type="radio" name="platform_alipay_open" id="open_alipay_yes" value="1" <if condition="C('platform_alipay_open') eq 1">checked="checked"</if>/>&nbsp;<label for="open_alipay_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="platform_alipay_open" id="open_alipay_no" value="0" <if condition="C('platform_alipay_open') eq 0">checked="checked"</if>/>&nbsp;<label for="open_alipay_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="###" onclick="showSetting('alipay','支付宝');" class="a_choose">配置信息</a>
+					</div>
+					<div class="hidden" id="alipay_setting">
+						<div class="setting_rows">
+							<p><span>帐号：</span>
+								<?php
+									$platform_alipay_name = C('platform_alipay_name');
+									$platform_alipay_name_s = substr($platform_alipay_name, 0, 2);
+									$platform_alipay_name_s .= '*************************'.substr($platform_alipay_name, -2);
+								?>
+								<span class="platform_alipay_name" style="<?php if(!$platform_alipay_name){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_alipay_name_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_alipay_name').hide();$('.platform_alipay_name-edit').show();$('input[name=\'platform_alipay_name\']').val('');">修改</span>
+								</span>
+								<span class="platform_alipay_name-edit" style="<?php if($platform_alipay_name){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_alipay_name" value="{pigcms:$platform_alipay_name}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_alipay_name').show();$('.platform_alipay_name-edit').hide();$('input[name=\'platform_alipay_name\']').val('{pigcms:$platform_alipay_name}');">显示</span>
+								</span>
+							</p>
+							<p><span>PID：</span>
+								<?php
+									$platform_alipay_pid = C('platform_alipay_pid');
+									$platform_alipay_pid_s = substr($platform_alipay_pid, 0, 2);
+									$platform_alipay_pid_s .= '*************************'.substr($platform_alipay_pid, -2);
+								?>
+								<span class="platform_alipay_pid" style="<?php if(!$platform_alipay_pid){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_alipay_pid_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_alipay_pid').hide();$('.platform_alipay_pid-edit').show();$('input[name=\'platform_alipay_pid\']').val('');">修改</span>
+								</span>
+								<span class="platform_alipay_pid-edit" style="<?php if($platform_alipay_pid){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_alipay_pid" value="{pigcms:$platform_alipay_pid}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_alipay_pid').show();$('.platform_alipay_pid-edit').hide();$('input[name=\'platform_alipay_pid\']').val('{pigcms:$platform_alipay_pid}');">显示</span>
+								</span>
+							</p>
+							<p><span>KEY：</span>
+								<?php
+									$platform_alipay_key = C('platform_alipay_key');
+									$platform_alipay_key_s = substr($platform_alipay_key, 0, 2);
+									$platform_alipay_key_s .= '*************************'.substr($platform_alipay_key, -2);
+								?>
+								<span class="platform_alipay_key" style="<?php if(!$platform_alipay_key){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_alipay_key_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_alipay_key').hide();$('.platform_alipay_key-edit').show();$('input[name=\'platform_alipay_key\']').val('');">修改</span>
+								</span>
+								<span class="platform_alipay_key-edit" style="<?php if($platform_alipay_key){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_alipay_key" value="{pigcms:$platform_alipay_key}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_alipay_key').show();$('.platform_alipay_key-edit').hide();$('input[name=\'platform_alipay_key\']').val('{pigcms:$platform_alipay_key}');">显示</span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong><img src="{pigcms:$staticPath}/tpl/static/pay_icon/tenpay.png"/>财付通(WAP手机)：</strong></td>
+			<td>
+				<div class="pay_setting">
+					<div>
+						<input type="radio" name="platform_tenpay_open" id="open_tenpay_yes" value="1" <if condition="C('platform_tenpay_open') eq 1">checked="checked"</if>/>&nbsp;<label for="open_tenpay_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="platform_tenpay_open" id="open_tenpay_no" value="0" <if condition="C('platform_tenpay_open') eq 0">checked="checked"</if>/>&nbsp;<label for="open_tenpay_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="###" onclick="showSetting('tenpay','财付通(WAP手机)');" class="a_choose">配置信息</a>
+					</div>
+					<div class="hidden" id="tenpay_setting">
+						<div class="setting_rows">
+							<p><span>partnerId：</span>
+								<?php
+									$platform_tenpay_partnerid = C('platform_tenpay_partnerid');
+									$platform_tenpay_partnerid_s = substr($platform_tenpay_partnerid, 0, 2);
+									$platform_tenpay_partnerid_s .= '*************************'.substr($platform_tenpay_partnerid, -2);
+								?>
+								<span class="platform_tenpay_partnerid" style="<?php if(!$platform_tenpay_partnerid){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_tenpay_partnerid_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpay_partnerid').hide();$('.platform_tenpay_partnerid-edit').show();$('input[name=\'platform_tenpay_partnerid\']').val('');">修改</span>
+								</span>
+								<span class="platform_tenpay_partnerid-edit" style="<?php if($platform_tenpay_partnerid){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_tenpay_partnerid" value="{pigcms:$platform_tenpay_partnerid}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpay_partnerid').show();$('.platform_tenpay_partnerid-edit').hide();$('input[name=\'platform_tenpay_partnerid\']').val('{pigcms:$platform_tenpay_partnerid}');">显示</span>
+								</span>
+							</p>
+							<p><span>partnerKey：</span>
+								<?php
+									$platform_tenpay_partnerkey = C('platform_tenpay_partnerkey');
+									$platform_tenpay_partnerkey_s = substr($platform_tenpay_partnerkey, 0, 2);
+									$platform_tenpay_partnerkey_s .= '*************************'.substr($platform_tenpay_partnerkey, -2);
+								?>
+								<span class="platform_tenpay_partnerkey" style="<?php if(!$platform_tenpay_partnerkey){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_tenpay_partnerkey_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpay_partnerkey').hide();$('.platform_tenpay_partnerkey-edit').show();$('input[name=\'platform_tenpay_partnerkey\']').val('');">修改</span>
+								</span>
+								<span class="platform_tenpay_partnerkey-edit" style="<?php if($platform_tenpay_partnerkey){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_tenpay_partnerkey" value="{pigcms:$platform_tenpay_partnerkey}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpay_partnerkey').show();$('.platform_tenpay_partnerkey-edit').hide();$('input[name=\'platform_tenpay_partnerkey\']').val('{pigcms:$platform_tenpay_partnerkey}');">显示</span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong><img src="{pigcms:$staticPath}/tpl/static/pay_icon/tenpay.png"/>财付通(即时到帐)：</strong></td>
+			<td>
+				<div class="pay_setting">
+					<div>
+						<input type="radio" name="platform_tenpayComputer_open" id="open_tenpaycomputer_yes" value="1" <if condition="C('platform_tenpayComputer_open') eq 1">checked="checked"</if>/>&nbsp;<label for="open_tenpaycomputer_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="platform_tenpayComputer_open" id="open_tenpaycomputer_no" value="0" <if condition="C('platform_tenpayComputer_open') eq 0">checked="checked"</if>/>&nbsp;<label for="open_tenpaycomputer_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="###" onclick="showSetting('tenpaycomputer','财付通(即时到帐)');" class="a_choose">配置信息</a>
+					</div>
+					<div class="hidden" id="tenpaycomputer_setting">
+						<div class="setting_rows">
+							<p><span>partnerId：</span>
+								<?php
+									$platform_tenpayComputer_partnerid = C('platform_tenpayComputer_partnerid');
+									$platform_tenpayComputer_partnerid_s = substr($platform_tenpayComputer_partnerid, 0, 2);
+									$platform_tenpayComputer_partnerid_s .= '*************************'.substr($platform_tenpayComputer_partnerid, -2);
+								?>
+								<span class="platform_tenpayComputer_partnerid" style="<?php if(!$platform_tenpayComputer_partnerid){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_tenpayComputer_partnerid_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpayComputer_partnerid').hide();$('.platform_tenpayComputer_partnerid-edit').show();$('input[name=\'platform_tenpayComputer_partnerid\']').val('');">修改</span>
+								</span>
+								<span class="platform_tenpayComputer_partnerid-edit" style="<?php if($platform_tenpayComputer_partnerid){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_tenpayComputer_partnerid" value="{pigcms:$platform_tenpayComputer_partnerid}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpayComputer_partnerid').show();$('.platform_tenpayComputer_partnerid-edit').hide();$('input[name=\'platform_tenpayComputer_partnerid\']').val('{pigcms:$platform_tenpayComputer_partnerid}');">显示</span>
+								</span>
+							</p>
+							<p><span>partnerKey：</span>
+								<?php
+									$platform_tenpayComputer_partnerkey = C('platform_tenpayComputer_partnerkey');
+									$platform_tenpayComputer_partnerkey_s = substr($platform_tenpayComputer_partnerkey, 0, 2);
+									$platform_tenpayComputer_partnerkey_s .= '*************************'.substr($platform_tenpayComputer_partnerkey, -2);
+								?>
+								<span class="platform_tenpayComputer_partnerkey" style="<?php if(!$platform_tenpayComputer_partnerkey){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_tenpayComputer_partnerkey_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpayComputer_partnerkey').hide();$('.platform_tenpayComputer_partnerkey-edit').show();$('input[name=\'platform_tenpayComputer_partnerkey\']').val('');">修改</span>
+								</span>
+								<span class="platform_tenpayComputer_partnerkey-edit" style="<?php if($platform_tenpayComputer_partnerkey){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_tenpayComputer_partnerkey" value="{pigcms:$platform_tenpayComputer_partnerkey}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_tenpayComputer_partnerkey').show();$('.platform_tenpayComputer_partnerkey-edit').hide();$('input[name=\'platform_tenpayComputer_partnerkey\']').val('{pigcms:$platform_tenpayComputer_partnerkey}');">显示</span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong><img src="{pigcms:$staticPath}/tpl/static/pay_icon/allinpay.png"/>通联支付：</strong></td>
+			<td>
+				<div class="pay_setting">
+					<div>
+						<input type="radio" name="platform_allinpay_open" id="open_allinpay_yes" value="1" <if condition="C('platform_allinpay_open') eq 1">checked="checked"</if>/>&nbsp;<label for="open_allinpay_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="platform_allinpay_open" id="open_allinpay_no" value="0" <if condition="C('platform_allinpay_open') eq 0">checked="checked"</if>/>&nbsp;<label for="open_allinpay_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="###" onclick="showSetting('allinpay','通联支付');" class="a_choose">配置信息</a>
+					</div>
+					<div class="hidden" id="allinpay_setting">
+						<div class="setting_rows">
+							<p><span>商户号：</span>
+								<?php
+									$platform_allinpay_merchantId = C('platform_allinpay_merchantId');
+									$platform_allinpay_merchantId_s = substr($platform_allinpay_merchantId, 0, 2);
+									$platform_allinpay_merchantId_s .= '*************************'.substr($platform_allinpay_merchantId, -2);
+								?>
+								<span class="platform_allinpay_merchantId" style="<?php if(!$platform_allinpay_merchantId){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_allinpay_merchantId_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_allinpay_merchantId').hide();$('.platform_allinpay_merchantId-edit').show();$('input[name=\'platform_allinpay_merchantId\']').val('');">修改</span>
+								</span>
+								<span class="platform_allinpay_merchantId-edit" style="<?php if($platform_allinpay_merchantId){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_allinpay_merchantId" value="{pigcms:$platform_allinpay_merchantId}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_allinpay_merchantId').show();$('.platform_allinpay_merchantId-edit').hide();$('input[name=\'platform_allinpay_merchantId\']').val('{pigcms:$platform_allinpay_merchantId}');">显示</span>
+								</span>
+							</p>
+							<p><span>MD5 KEY：</span>
+								<?php
+									$platform_allinpay_merchantKey = C('platform_allinpay_merchantKey');
+									$platform_allinpay_merchantKey_s = substr($platform_allinpay_merchantKey, 0, 2);
+									$platform_allinpay_merchantKey_s .= '*************************'.substr($platform_allinpay_merchantKey, -2);
+								?>
+								<span class="platform_allinpay_merchantKey" style="<?php if(!$platform_allinpay_merchantKey){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_allinpay_merchantKey_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_allinpay_merchantKey').hide();$('.platform_allinpay_merchantKey-edit').show();$('input[name=\'platform_allinpay_merchantKey\']').val('');">修改</span>
+								</span>
+								<span class="platform_allinpay_merchantKey-edit" style="<?php if($platform_allinpay_merchantKey){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_allinpay_merchantKey" value="{pigcms:$platform_allinpay_merchantKey}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_allinpay_merchantKey').show();$('.platform_allinpay_merchantKey-edit').hide();$('input[name=\'platform_allinpay_merchantKey\']').val('{pigcms:$platform_allinpay_merchantKey}');">显示</span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong><img src="{pigcms:$staticPath}/tpl/static/pay_icon/yeepay.png"/>易宝支付：</strong></td>
+			<td>
+				<div class="pay_setting">
+					<div>
+						<input type="radio" name="platform_yeepay_open" id="open_yeepay_yes" value="1" <if condition="C('platform_yeepay_open') eq 1">checked="checked"</if>/>&nbsp;<label for="open_yeepay_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="platform_yeepay_open" id="open_yeepay_no" value="0" <if condition="C('platform_yeepay_open') eq 0">checked="checked"</if>/>&nbsp;<label for="open_yeepay_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="###" onclick="showSetting('yeepay','易宝支付');" class="a_choose">配置信息</a>
+					</div>
+					<div class="hidden" id="yeepay_setting">
+						<div class="setting_rows">
+							<p><span>商户编号：</span>
+								<?php
+									$platform_yeepay_merchantaccount = C('platform_yeepay_merchantaccount');
+									$platform_yeepay_merchantaccount_s = substr($platform_yeepay_merchantaccount, 0, 2);
+									$platform_yeepay_merchantaccount_s .= '*************************'.substr($platform_yeepay_merchantaccount, -2);
+								?>
+								<span class="platform_yeepay_merchantaccount" style="<?php if(!$platform_yeepay_merchantaccount){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_yeepay_merchantaccount_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_merchantaccount').hide();$('.platform_yeepay_merchantaccount-edit').show();$('input[name=\'platform_yeepay_merchantaccount\']').val('');">修改</span>
+								</span>
+								<span class="platform_yeepay_merchantaccount-edit" style="<?php if($platform_yeepay_merchantaccount){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_yeepay_merchantaccount" value="{pigcms:$platform_yeepay_merchantaccount}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_merchantaccount').show();$('.platform_yeepay_merchantaccount-edit').hide();$('input[name=\'platform_yeepay_merchantaccount\']').val('{pigcms:$platform_yeepay_merchantaccount}');">显示</span>
+								</span>
+							</p>
+							<p><span>商户私钥：</span>
+								<?php
+									$platform_yeepay_merchantPrivateKey = C('platform_yeepay_merchantPrivateKey');
+									$platform_yeepay_merchantPrivateKey_s = substr($platform_yeepay_merchantPrivateKey, 0, 2);
+									$platform_yeepay_merchantPrivateKey_s .= '*************************'.substr($platform_yeepay_merchantPrivateKey, -2);
+								?>
+								<span class="platform_yeepay_merchantPrivateKey" style="<?php if(!$platform_yeepay_merchantPrivateKey){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_yeepay_merchantPrivateKey_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_merchantPrivateKey').hide();$('.platform_yeepay_merchantPrivateKey-edit').show();$('input[name=\'platform_yeepay_merchantPrivateKey\']').val('');">修改</span>
+								</span>
+								<span class="platform_yeepay_merchantPrivateKey-edit" style="<?php if($platform_yeepay_merchantPrivateKey){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_yeepay_merchantPrivateKey" value="{pigcms:$platform_yeepay_merchantPrivateKey}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_merchantPrivateKey').show();$('.platform_yeepay_merchantPrivateKey-edit').hide();$('input[name=\'platform_yeepay_merchantPrivateKey\']').val('{pigcms:$platform_yeepay_merchantPrivateKey}');">显示</span>
+								</span>
+							</p>
+							<p><span>商户公钥：</span>
+								<?php
+									$platform_yeepay_merchantPublicKey = C('platform_yeepay_merchantPublicKey');
+									$platform_yeepay_merchantPublicKey_s = substr($platform_yeepay_merchantPublicKey, 0, 2);
+									$platform_yeepay_merchantPublicKey_s .= '*************************'.substr($platform_yeepay_merchantPublicKey, -2);
+								?>
+								<span class="platform_yeepay_merchantPublicKey" style="<?php if(!$platform_yeepay_merchantPublicKey){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_yeepay_merchantPublicKey_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_merchantPublicKey').hide();$('.platform_yeepay_merchantPublicKey-edit').show();$('input[name=\'platform_yeepay_merchantPublicKey\']').val('');">修改</span>
+								</span>
+								<span class="platform_yeepay_merchantPublicKey-edit" style="<?php if($platform_yeepay_merchantPublicKey){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_yeepay_merchantPublicKey" value="{pigcms:$platform_yeepay_merchantPublicKey}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_merchantPublicKey').show();$('.platform_yeepay_merchantPublicKey-edit').hide();$('input[name=\'platform_yeepay_merchantPublicKey\']').val('{pigcms:$platform_yeepay_merchantPublicKey}');">显示</span>
+								</span>
+							</p>
+							<p><span>易宝公钥：</span>
+								<?php
+									$platform_yeepay_yeepayPublicKey = C('platform_yeepay_yeepayPublicKey');
+									$platform_yeepay_yeepayPublicKey_s = substr($platform_yeepay_yeepayPublicKey, 0, 2);
+									$platform_yeepay_yeepayPublicKey_s .= '*************************'.substr($platform_yeepay_yeepayPublicKey, -2);
+								?>
+								<span class="platform_yeepay_yeepayPublicKey" style="<?php if(!$platform_yeepay_yeepayPublicKey){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_yeepay_yeepayPublicKey_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_yeepayPublicKey').hide();$('.platform_yeepay_yeepayPublicKey-edit').show();$('input[name=\'platform_yeepay_yeepayPublicKey\']').val('');">修改</span>
+								</span>
+								<span class="platform_yeepay_yeepayPublicKey-edit" style="<?php if($platform_yeepay_yeepayPublicKey){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_yeepay_yeepayPublicKey" value="{pigcms:$platform_yeepay_yeepayPublicKey}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_yeepayPublicKey').show();$('.platform_yeepay_yeepayPublicKey-edit').hide();$('input[name=\'platform_yeepay_yeepayPublicKey\']').val('{pigcms:$platform_yeepay_yeepayPublicKey}');">显示</span>
+								</span>
+							</p>
+							<p><span>商品类别码：</span>
+								<?php
+									$platform_yeepay_product_catalog = C('platform_yeepay_product_catalog');
+									$platform_yeepay_product_catalog_s = substr($platform_yeepay_product_catalog, 0, 2);
+									$platform_yeepay_product_catalog_s .= '*************************'.substr($platform_yeepay_product_catalog, -2);
+								?>
+								<span class="platform_yeepay_product_catalog" style="<?php if(!$platform_yeepay_product_catalog){?>display:none;<?php }?>width: inherit;">
+									<?php
+										echo $platform_yeepay_product_catalog_s;
+									?>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_product_catalog').hide();$('.platform_yeepay_product_catalog-edit').show();$('input[name=\'platform_yeepay_product_catalog\']').val('');">修改</span>
+								</span>
+								<span class="platform_yeepay_product_catalog-edit" style="<?php if($platform_yeepay_product_catalog){?>display:none;<?php }?>width: inherit;">
+									<input type="text" name="platform_yeepay_product_catalog" value="{pigcms:$platform_yeepay_product_catalog}" class="px"/>
+									<span class="btnGreen" style="width: inherit;" onclick="$('.platform_yeepay_product_catalog').show();$('.platform_yeepay_product_catalog-edit').hide();$('input[name=\'platform_yeepay_product_catalog\']').val('{pigcms:$platform_yeepay_product_catalog}');">显示</span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<!-- 
+		<tr>
+			<td><strong><img src="{pigcms:$staticPath}/tpl/static/pay_icon/chinabank.png"/>网银在线：</strong></td>
+			<td>
+				<div class="pay_setting">
+					<div>
+						<input type="radio" name="platform_chinabank_open" id="open_chinabank_yes" value="1" <if condition="C('platform_chinabank_open') eq 1">checked="checked"</if>/>&nbsp;<label for="open_chinabank_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="platform_chinabank_open" id="open_chinabank_no" value="0" <if condition="C('platform_chinabank_open') eq 0">checked="checked"</if>/>&nbsp;<label for="open_chinabank_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="###" onclick="showSetting('chinabank','网银在线');" class="a_choose">配置信息</a>
+					</div>
+					<div class="hidden" id="chinabank_setting">
+						<div class="setting_rows">
+							<p><span>商户号：</span><input type="text" name="platform_chinabank_account" value="{pigcms::C('platform_chinabank_account')}" class="px" /></p>
+							<p><span>MD5私钥：</span><input type="text" name="platform_chinabank_key" value="{pigcms::C('platform_chinabank_key')}" class="px" /></p>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		 -->
+	   <input type="hidden" name="files" value="<?php echo base64_encode('platform.php');?>" />
+	   <input type="hidden" name="files_hash" value="<?php echo md5('platform.php|validate_pigcms');?>" />
+		<tr> 
+			<td height="48" colspan="2">
+				<div id="addkey"></div>
+				<div style="padding-left:100px;">
+					<input type="submit" value="保存设置" />
+				</div>
+			</td>
+		</tr>
+	</table>
+</form>
+<br />
+<br />
+<br />
+
+</div>
+</body>
+</html>

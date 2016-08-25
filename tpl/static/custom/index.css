@@ -1,0 +1,120 @@
+.uploader_list .uploader_item
+{
+    background: #fff;
+    border: solid 1px #DCDCDC;
+    padding: 3px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    float: left;
+    margin: 5px;
+}
+
+.uploader_list .uploader_item img
+{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 80px;
+    height: 80px;
+}
+
+.uploader_list .uploader_add
+{
+}
+
+.uploader_list .webuploader-container
+{
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+.uploader_list .webuploader-element-invisible
+{
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+
+.uploader_list .webuploader-pick
+{
+    height: 80px;
+    width: 80px;
+}
+
+.uploader_list .webuploader-pick-hover
+{
+}
+
+.uploader_list .webuploader-pick-disable
+{
+    opacity: 0.6;
+    pointer-events:none;
+}
+
+.uploader_list .uploader_iconbox
+{
+    width: 80px;
+    height: 80px;
+    background: #F2F2F2;
+    text-align: center;
+    color: #D5D5D5;
+    font-size: 36px;
+    line-height: 80px;
+}
+.uploader_list .uploader_pick
+{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.uploader_list .icon-plus2
+{
+    display: inline-block;
+    margin-top: 22px;
+}
+
+.uploader_list .progress_box
+{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 80px;
+    height: 80px;
+    left: 4px;
+    top: 4px;
+    display: none;
+}
+
+.uploader_list .close_box
+{
+    color: #c00;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    border: solid 1px #DCDCDC;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    right: -10px;
+    top: -10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.uploader_list .close_box .icon-close
+{
+    margin-top: 8px;
+}
+
+.uploader_list .upload_tip
+{
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+    color: #d00;
+}

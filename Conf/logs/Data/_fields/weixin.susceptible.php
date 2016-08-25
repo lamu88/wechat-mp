@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'word', 2 => 'state', 3 => 'addtime', 4 => 'time', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'word' => 'varchar(100)', 'state' => 'int(11)', 'addtime' => 'int(11)', 'time' => 'int(11)', ), ); ?>

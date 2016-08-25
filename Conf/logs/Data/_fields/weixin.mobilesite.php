@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'token', 2 => 'owndomain', 3 => 'admindomain', 4 => 'tjscript', 5 => 'addtime', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(10) unsigned', 'token' => 'varchar(100)', 'owndomain' => 'varchar(150)', 'admindomain' => 'varchar(150)', 'tjscript' => 'text', 'addtime' => 'int(10) unsigned', ), ); ?>

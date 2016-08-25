@@ -1,0 +1,403 @@
+[ 2015-11-03T02:58:12+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=5&level=2&title=%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037825s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000532s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003349s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041753s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.041900s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.042016s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052104s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.052290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2015-11-03T02:58:13+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=134&level=2&title=%E4%BB%A3%E7%90%86%E5%95%86%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.047989s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.048481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005294s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054161s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056320s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056639s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003003s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064381s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.064638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2015-11-03T02:58:14+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=2&level=2&title=%E7%AB%99%E7%82%B9%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042038s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004245s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.046682s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.046835s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.046956s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.047035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056978s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.058714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2015-11-03T02:58:15+08:00 ] 127.0.0.1 /index.php?g=System&m=Node&a=index&pid=11&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.079998s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.080356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004675s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.085122s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.088770s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.089543s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.089654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004926s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.098977s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.099666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2015-11-03T02:58:15+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=index&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 2 行.
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] fread(): Length parameter must be greater than 0 E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 8 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2048] Non-static method updateSync::curl_get_data() should not be called statically E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 44 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.179744s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 161 行.
+NOTIC: [8] Undefined variable: token E:\test_www\1103\Conf\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 176 行.
+NOTIC: [8] Undefined variable: token E:\test_www\1103\Conf\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 184 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 215 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 258 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 299 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 303 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.180082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010678s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.190786s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.191143s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.191349s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.191426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.199711s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.199917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000234s ]
+
+[ 2015-11-03T02:58:17+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=safe&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 2 行.
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] fread(): Length parameter must be greater than 0 E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 8 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037571s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000527s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\8b1c3759371091711969cec00ac6476d.php 第 27 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\8b1c3759371091711969cec00ac6476d.php 第 41 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' E:\test_www\1103\Conf\logs\Cache\System\8b1c3759371091711969cec00ac6476d.php 第 47 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007260s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.045427s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.045588s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.045855s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.045968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057667s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.057961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-11-03T02:58:20+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=wechat_api&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000207s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 2 行.
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] fread(): Length parameter must be greater than 0 E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 8 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\System\SiteAction.class.php 第 12 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038183s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007291s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.045826s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.046073s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.046227s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.046304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.054379s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.054622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2015-11-03T02:58:44+08:00 ] 127.0.0.1 /index.php?g=Home&m=Index&a=updatekey&key=%22assa%27sasa
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] unlink(./Conf/logs/Temp/6/2/62b13d74a4d3c2bf433c1f8ff749a1ae.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 58 行.
+NOTIC: [8] Undefined variable: type E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 68 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 866 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.030910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001594s ]
+
+[ 2015-11-03T03:00:05+08:00 ] 127.0.0.1 /index.php?g=Home&m=Index&a=updatekey&key=%22assa%27sasa
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] unlink(./Conf/logs/Temp/6/2/62b13d74a4d3c2bf433c1f8ff749a1ae.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 58 行.
+NOTIC: [8] Undefined variable: type E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 68 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 866 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.029265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002796s ]
+
+[ 2015-11-03T03:00:53+08:00 ] 127.0.0.1 /index.php?g=Home&m=Index&a=updatekey&key=%22assa%27sasa=%3E
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] unlink(./Conf/logs/Temp/6/2/62b13d74a4d3c2bf433c1f8ff749a1ae.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 58 行.
+NOTIC: [8] Undefined variable: type E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 68 行.
+NOTIC: [2] unlink(./Conf/logs/~runtime.php): No such file or directory E:\test_www\1103\PigCms\Lib\Action\Home\IndexAction.class.php 第 866 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.036426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-11-03T03:02:09+08:00 ] 127.0.0.1 /index.php?g=System&m=SystemIndex&a=index&pid=133&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.053820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2015-11-03T03:02:10+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=main
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048780s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005521s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant lastsqlupdate - assumed 'lastsqlupdate' E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 21 行.
+NOTIC: [8] Use of undefined constant version - assumed 'version' E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 22 行.
+NOTIC: [8] Undefined variable: versionName E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 34 行.
+NOTIC: [2048] Non-static method updateSync::finished_callback() should not be called statically, assuming $this from incompatible context E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 113 行.
+NOTIC: [2048] Non-static method updateSync::group_functions_add_Weixin() should not be called statically, assuming $this from incompatible context E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 119 行.
+NOTIC: [2048] Non-static method updateSync::curl_get_data() should not be called statically E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 51 行.
+NOTIC: [2048] Non-static method updateSync::curl_get_data() should not be called statically E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 62 行.
+NOTIC: [2048] Non-static method updateSync::curl_get_data() should not be called statically E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 97 行.
+NOTIC: [2048] Non-static method NODEset::index() should not be called statically, assuming $this from incompatible context E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.054358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.556015s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.610408s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.613684s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.616566s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.622160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014580s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.636445s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002849s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.639327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+
+[ 2015-11-03T03:02:13+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=repairTable
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.058346s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003824s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.062616s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.062876s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.063084s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.071655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.071957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000225s ]
+
+[ 2015-11-03T03:02:15+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=main
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Constant STATICS already defined E:\test_www\1103\PigCms\Lib\Action\BaseAction.class.php 第 134 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given E:\test_www\1103\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.092302s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002391s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant lastsqlupdate - assumed 'lastsqlupdate' E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 21 行.
+NOTIC: [8] Array to string conversion E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 21 行.
+NOTIC: [8] Use of undefined constant version - assumed 'version' E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 22 行.
+NOTIC: [8] Undefined variable: versionName E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 34 行.
+NOTIC: [2048] Non-static method updateSync::finished_callback() should not be called statically, assuming $this from incompatible context E:\test_www\1103\Conf\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 113 行.
+NOTIC: [2048] Non-static method updateSync::group_functions_add_Weixin() should not be called statically, assuming $this from incompatible context E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 119 行.
+NOTIC: [2048] Non-static method updateSync::curl_get_data() should not be called statically E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 51 行.
+NOTIC: [2048] Non-static method updateSync::curl_get_data() should not be called statically E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 62 行.
+NOTIC: [2048] Non-static method updateSync::curl_get_data() should not be called statically E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 97 行.
+NOTIC: [2048] Non-static method NODEset::index() should not be called statically, assuming $this from incompatible context E:\test_www\1103\PigCms\Lib\ORG\updateSync.class.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.094718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.620934s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.715611s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.716274s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.717679s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.719269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004823s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/9/1918a82efefbf95e241fd6fe7b16afd2.php): No such file or directory E:\test_www\1103\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array E:\test_www\1103\PigCms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.743910s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.744464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+

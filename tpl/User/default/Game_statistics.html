@@ -1,0 +1,210 @@
+<include file="Public:head"/>
+
+<link rel="stylesheet" href="{pigcms:$staticPath}/tpl/static/game/css/jquery-ui-1.9.1.custom.min.css">
+
+<script src="{pigcms:$staticPath}/tpl/static/new/js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/game/js/jquery-ui-1.9.1.custom.min.js"></script>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/game/js/jquery.ui.datepicker-zh-CN.js.js"></script>
+
+<div class="content">
+	<div class="cLineB">
+		<h4 class="left">统计</h4>
+		<a href="/index.php?g=User&m=Game&a=index&token={pigcms:$token}" class="right btnGrayS vm">返回我的活动</a>
+
+		<div class="clr"></div>
+	</div>
+
+	<div class="msgWrap ztActTj">
+		<h3>活动详细</h3>
+
+		<div class="row">
+			<div class="col-xs-6 left">
+				<ul>
+					<li>
+						<label>活动名称：</label>
+						<span>{pigcms:$game.title}</span>
+					</li>
+					<li>
+						<label>游戏类型：</label>
+						<span>{pigcms:$cats[$thisGame['catid']]['name']}</span>
+					</li>
+					<li>
+						<label>游戏名称：</label>
+						<span>{pigcms:$thisGame.title}</span>
+					</li>
+					<li>
+						<label>活动时间：</label>
+						<span>{pigcms:$game.start_time|date='Y-m-d H:s:i', ###}&nbsp;到&nbsp;{pigcms:$game.end_time|date='Y-m-d H:s:i', ###}</span>
+					</li>
+					<li>
+						<label>活动状态：</label>
+						<span><if condition="$game['is_release'] eq 0">未发布<else />已发布</if></span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-5 left">
+				<h3>奖项明细：</h3>
+				<ul>
+					<php>$codeCount = count($codeData);</php>
+					<volist id="awards" name="awardsValue">
+						<if condition="$key lt $awardsCount">
+							<if condition="isset($codeData[$key+1])">
+								<li>{pigcms:$awards.awards_type}&nbsp;&nbsp;已兑：<em>{pigcms:$codeData[$key+1]['use']}</em>份&nbsp;剩余：<em>{pigcms:$awards['awards_num']-$codeData[$key+1]['use']}</em>份；</li>
+							<else />
+								<li>{pigcms:$awards.awards_type}&nbsp;&nbsp;已兑：<em>0</em>份&nbsp;剩余：<em>{pigcms:$awards.awards_num}</em>份；</li>
+							</if>
+						</if>
+					</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="msgWrap ztActLj">
+		<div>
+			<ul class="list-inline row">
+				<li class="col-xs-1 text-center">
+					<h4>活动累计</h4>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$totalStatistics.open}</em>
+					<span style="display: block; ">浏览人数</span>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$totalStatistics.join}</em>
+					<span style="display: block; ">参与人数</span>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$totalStatistics.share}</em>
+					<span style="display: block; ">分享人数</span>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$totalStatistics.shareCount}</em>
+					<span style="display: block; ">分享次数</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="msgWrap">
+		<div class="row floatUl">
+			<ul class="list-inline col-xs-6">
+				<li>
+					<a href="/index.php?g=User&m=Game&a=statistics&id={pigcms:$id}&token={pigcms:$token}&date_type=-1" class="vm <if condition="$dateType neq -1">btnGrayS</if>" style="padding: 5px 12px; margin-left: 5px; display: inline-block; font-size: 14px; " >昨日</a>
+				</li>
+				<li>
+					<a href="/index.php?g=User&m=Game&a=statistics&id={pigcms:$id}&token={pigcms:$token}&date_type=0" class="vm <if condition="$dateType neq 0">btnGrayS</if>" style="padding: 5px 12px; margin-left: 5px; display: inline-block; font-size: 14px; " >今日</a>
+				</li>
+				<li>
+					<a href="/index.php?g=User&m=Game&a=statistics&id={pigcms:$id}&token={pigcms:$token}&date_type=1" class="vm <if condition="$dateType neq 1">btnGrayS</if>" style="padding: 5px 12px; margin-left: 5px; display: inline-block; font-size: 14px; " >最近7日</a>
+				</li>
+				<li>
+					<a href="/index.php?g=User&m=Game&a=statistics&id={pigcms:$id}&token={pigcms:$token}&date_type=2" class="vm <if condition="$dateType neq 2">btnGrayS</if>" style="padding: 5px 12px; margin-left: 5px; display: inline-block; font-size: 14px; " >最近30日</a>
+				</li>
+				<li>
+					<a href="/index.php?g=User&m=Game&a=statistics&id={pigcms:$id}&token={pigcms:$token}&date_type=3" class="vm <if condition="$dateType neq 3">btnGrayS</if>" style="padding: 5px 12px; margin-left: 5px; display: inline-block; font-size: 14px; " >本月</a>
+				</li>
+			</ul>
+
+			<form method="post" action="" class="col-xs-5" style="overflow:hidden" id="timeArea">
+				<div class="checkTime">
+					<input type="text" name="start_time" placeholder="开始时间" value="{pigcms:$startTime}" id="startTime">
+					<em>至</em>
+					<input type="text" name="end_time" placeholder="结束时间" value="{pigcms:$endTime}" id="endTime">
+
+					<input type="submit" value="查询" id="msgSearchBtn" href="" class="btnGrayS" title="查询">
+				</div>
+			</form>
+		</div>
+
+		<div class="row floatUl ztActLj">
+			<ul class="list-inline">
+				<li class="col-xs-1 text-center">
+					<h4>活动累计</h4>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$checkStatistics.open}</em>
+					<span style="display: block; ">浏览人数</span>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$checkStatistics.join}</em>
+					<span style="display: block; ">参与人数</span>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$checkStatistics.share}</em>
+					<span style="display: block; ">分享人数</span>
+				</li>
+				<li class="col-xs-1 text-center">
+					<em>{pigcms:$checkStatistics.shareCount}</em>
+					<span style="display: block; ">分享次数</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-11">
+				<h4>详细统计</h4>
+
+				<div class="cLineB"></div>
+			</div>
+
+			<div id="statistics" style="height:400px;width:960px;"></div>
+		</div>
+	</div>
+
+</div>
+</div>
+
+<div class="clr"></div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+	$("#timeArea").bind("submit", function (event) {
+		var startValue = $("#startTime").val();
+		var endValue = $("#endTime").val();
+
+		if (!startValue || !endValue) {
+			event.preventDefault();
+		}
+	});
+
+	$(function () {
+		$("#startTime").datepicker({
+			dateFormat: "yy-mm-dd",
+			maxDate: 0
+		});
+
+		$("#endTime").datepicker({
+			dateFormat: "yy-mm-dd",
+			maxDate: 1
+		});
+
+		$("#startTime").change(function () {
+			var $this = $(this);
+			var value = $this.val();
+			var timeDate = new Date(value);
+
+			var newYear = timeDate.getFullYear();
+			var newMonth = timeDate.getMonth();
+			var newDay = timeDate.getDate()+1;
+
+			$("#endTime").datepicker('option', 'minDate', new Date(newYear, newMonth, newDay));
+		});
+
+		$("#endTime").change(function () {
+			var $this = $(this);
+			var value = $this.val();
+			var timeDate = new Date(value);
+
+			var newYear = timeDate.getFullYear();
+			var newMonth = timeDate.getMonth();
+			var newDay = timeDate.getDate()-1;
+
+			$("#startTime").datepicker('option', 'maxDate', new Date(newYear, newMonth, newDay));
+		});
+	});
+</script>
+<include file="Public:footer"/>

@@ -1,0 +1,57 @@
+ul,ol,li{list-style:none}
+.reward_content{ font-size: 13px; color:#666; }
+.reward_content p{ text-align: center;    margin: 5px 0;}
+.reward_content p span{ width:50px; height: 50px; line-height: 50px; font-size: 18px; border-radius: 100%; background:#ed614e; border:1px solid #e14c38; color:#fff; display: inline-block;}
+.reward_content p span.already_reward_icon{ background:#cfcfcf; border:1px solid #b8b8b8;    height: 36px;    padding: 7px 0;}
+.reward_content p span.already_reward_icon i{ line-height: 17px; font-size: 12px;    display: block;}
+
+.reward_table{ margin: 10px 0; width:100%; border:1px solid #e1e1e1;}
+.reward_table table{ width:100%; line-height: 30px;}
+.reward_table table caption{ text-align: center; background:#f9f9f9; font-size: 12px;border-bottom: 1px solid #e1e1e1}}
+.reward_table table caption span{ color:#5182c0;}
+.reward_table table tbody{ line-height: 40px;}
+.reward_table table tbody tr{border-bottom: 1px dashed #e1e1e1;font-size: 12px; color:#666;}
+.reward_table table tbody tr:last-child{border:0;}
+.reward_table table tbody tr td{  text-align: center;width:30%;}
+.reward_table table tbody tr td:nth-child(1){ text-align: left;width:40%  }
+.reward_table table tbody tr .reward_head{ display: inline-block; width:35px; height:35px; border-radius: 100%; vertical-align: middle; margin: 0 5px;  overflow: hidden}
+.reward_table table tbody tr .reward_head img{width:35px; height:35px; vertical-align: top;}
+.reward_table table tbody tr i{ display: inline-block; vertical-align: middle; color:#333;width: 70px;    overflow: hidden;    height: 35px;    white-space: nowrap;    text-overflow: ellipsis;    overflow: hidden;}
+.reward_table table tbody tr span{color:#ed614e;}
+
+
+
+.layer{ background:rgba(0,0,0,0.5); width:100%; height:100%;position: fixed; z-index: 9; display:none;top: 0;left:0;}
+.layer_content{ display:none; position: fixed; z-index: 99; background:url(../images/BG.png); background-size:280px; width:280px; height:362px;  top:50%; left:50%; margin-left:-140px; margin-top:-191px;}
+.layer1{ }
+.close{ position:absolute; right:8px; top:8px; width:15px; height: 15px; background:url(../images/zt.png) no-repeat; background-size:15px;}
+.layer_content .layer_head{ width:75px; height: 75px; border:0; border-radius: 100%; overflow: hidden; position: absolute;    left: 50%;    margin-left: -37px;    margin-top: 23px;} 
+.layer_content .layer_head img{ width:75px; height: 75px;}
+.layer_content .layer_txt{    position: absolute;    width: 100%;    top: 208px;    left: 0;}
+.layer_content .layer_txt p{ font-size: 36px; color:#fff7c4;    text-align: center;    margin: 10px 0;}
+.layer_content .layer_txt ul{ margin:0 8px;}
+.layer_content .layer_txt ul li{ margin:4px; border:1px solid #db4031; border-radius:3px; width:78px; line-height: 28px; color:#fff7c4; font-size: 18px;     text-align: center;    float: left;}
+.layer_content .layer_txt ul li.active{ background:#db4d3f;border:1px solid #db4d3f;}
+.layer_content .layer_txt .layer_input{ border:1px solid #fff7c4; line-height: 27px;  color:#fff7c4; width:90%; margin:10px auto;}
+.layer_content .layer_txt .layer_input input{ width:225px;    vertical-align: top;    padding-left: 5px;    background: none; line-height: 27px}
+.layer_content .layer_button{ position:absolute; left:50%; bottom:-30px; width:60px; height:60px; margin-left:-30px; background:#ffde00; font-size: 24px; color:#e23323; line-height: 60px; border-radius: 100%; text-align: center}
+input,button,a,select,textarea{margin: 0; padding:0;/*-webkit-appearance:none;*/border:none; font-family: Microsoft YaHei;outline:0;}
+.clearfix {
+    *zoom:1
+}
+.clearfix:before,.clearfix:after {
+    display:table;
+    content:"";
+    line-height:0
+}
+.clearfix:after {
+    clear:both
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>短信接口</title>
+<link href="{pigcms::RES}/images/main.css" type="text/css" rel="stylesheet">
+<!-- <link href="{pigcms::RES}/images/jquery-1.7.2.min.js" type="text/css" rel="stylesheet">
+<link href="{pigcms::RES}/images/jquery.form.js" type="text/css" rel="stylesheet"> -->
+<script src="/tpl/static/jquery-1.4.2.min.js" type="text/javascript"></script>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+</head>
+<body class="warp">
+<style>
+.set_top{background:url('{pigcms::RES}/images/set_top.png');height:60px;}
+.set_top li{font-weight: bold;float:left;width:98px;line-height:60px;text-align: center;background:url('{pigcms::RES}/images/set_top_li.png');}
+#set_top_li_bg{background:url('{pigcms::RES}/images/set_top_li_hover.png');}
+.btnGreen{    display: inline-block;    padding: 2px 12px;    margin-bottom: 0;    font-size: 14px;    font-weight: normal;    text-align: center;    white-space: nowrap;    vertical-align: middle;    -ms-touch-action: manipulation;    touch-action: manipulation;    cursor: pointer;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;    background-image: none;    border: 1px solid transparent;    border-radius: 4px;    background-color: #44b549;    border-color: #44b549;    color: #FFFFFF;	background-image: none !important;    border: none !important;    text-shadow: none !important;    margin-left: 5px;    padding: 2px 8px !important;    cursor: pointer !important;    display: inline-block !important;    overflow: visible !important;    border-radius: 2px !important;    -moz-border-radius: 2px !important;    -webkit-border-radius: 2px !important;    color: #fff !important;    font-size: 14px !important;    line-height: 1.5 !important;}
+</style>
+<include file="Site:public" />
+<script>
+function sendtest(){
+  location.href="{pigcms::U('Site/smssendtest')}&mp="+document.getElementById('sms_mp').value;
+}
+</script>
+<div id="artlist">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="addn">
+ <form id="myform" action="" method="post">
+    <tr> 
+      <td  height="48" align="right"><strong>appId：</strong></td>
+    <td>
+		<?php
+			$appId = $site['appId'];
+			$site['appId'] = substr($appId, 0, 2);
+			$site['appId'] .= '*************************'.substr($appId, -2);
+		?>
+		<span class="appId" style="<?php if(!$appId){?>display:none;<?php }?>width: inherit;">
+			<?php
+				echo $site['appId'];
+			?>
+			<span class="btnGreen" style="width: inherit;" onclick="$('.appId').hide();$('.appId-edit').show();$('input[name=\'appId\']').val('');">修改</span>
+		</span>
+		<span class="appId-edit" style="<?php if($appId){?>display:none;<?php }?>width: inherit;">
+			<input type="text" name="appId" value="{pigcms:$appId}" class="ipt" size="45" />
+			<span class="btnGreen" style="width: inherit;" onclick="$('.appId').show();$('.appId-edit').hide();$('input[name=\'appId\']').val('{pigcms:$appId}');">显示</span>
+		</span>
+		<span>&nbsp;&nbsp;微信开放平台应用appId</span>
+    </td>
+    </tr>
+   <tr> 
+      <td  height="48" align="right"><strong>appSecret：</strong></td>
+	<td>
+		<?php
+			$appSecret = $site['appSecret'];
+			$site['appSecret'] = substr($appSecret, 0, 2);
+			$site['appSecret'] .= '*************************'.substr($appSecret, -2);
+		?>
+		<span class="appSecret" style="<?php if(!$appSecret){?>display:none;<?php }?>width: inherit;">
+			<?php
+				echo $site['appSecret'];
+			?>
+			<span class="btnGreen" style="width: inherit;" onclick="$('.appSecret').hide();$('.appSecret-edit').show();$('input[name=\'appSecret\']').val('');">修改</span>
+		</span>
+		<span class="appSecret-edit" style="<?php if($appSecret){?>display:none;<?php }?>width: inherit;">
+			<input type="text" name="appSecret" value="{pigcms:$appSecret}" class="ipt" size="45" />
+			<span class="btnGreen" style="width: inherit;" onclick="$('.appSecret').show();$('.appSecret-edit').hide();$('input[name=\'appSecret\']').val('{pigcms:$appSecret}');">显示</span>
+		</span>
+		<span>&nbsp;&nbsp;微信开放平台应用appSecret</span>
+	</td>
+    </tr>
+     <tr> 
+      <td  height="48" align="right"><strong>token：</strong></td>
+	<td>
+		<?php
+			$token = $site['token'];
+			$site['token'] = substr($token, 0, 2);
+			$site['token'] .= '*************************'.substr($token, -2);
+		?>
+		<span class="token" style="<?php if(!$token){?>display:none;<?php }?>width: inherit;">
+			<?php
+				echo $site['token'];
+			?>
+			<span class="btnGreen" style="width: inherit;" onclick="$('.token').hide();$('.token-edit').show();$('input[name=\'token\']').val('');">修改</span>
+		</span>
+		<span class="token-edit" style="<?php if($token){?>display:none;<?php }?>width: inherit;">
+			<input type="text" name="token" value="{pigcms:$token}" class="ipt" size="45" />
+			<span class="btnGreen" style="width: inherit;" onclick="$('.token').show();$('.token-edit').hide();$('input[name=\'token\']').val('{pigcms:$token}');">显示</span>
+		</span>
+		<span>&nbsp;&nbsp;公众号消息校验Token</span>
+	</td>
+    
+    </tr>
+    <tr>
+      <td  height="48" align="right"><strong>aesKey：</strong></td>
+	<td>
+		<?php
+			$encodingAesKey = $site['encodingAesKey'];
+			$site['encodingAesKey'] = substr($encodingAesKey, 0, 2);
+			$site['encodingAesKey'] .= '*************************'.substr($encodingAesKey, -2);
+		?>
+		<span class="encodingAesKey" style="<?php if(!$encodingAesKey){?>display:none;<?php }?>width: inherit;">
+			<?php
+				echo $site['encodingAesKey'];
+			?>
+			<span class="btnGreen" style="width: inherit;" onclick="$('.encodingAesKey').hide();$('.encodingAesKey-edit').show();$('input[name=\'encodingAesKey\']').val('');">修改</span>
+		</span>
+		<span class="encodingAesKey-edit" style="<?php if($encodingAesKey){?>display:none;<?php }?>width: inherit;">
+			<input type="text" name="encodingAesKey" value="{pigcms:$encodingAesKey}" class="ipt" size="45" />
+			<span class="btnGreen" style="width: inherit;" onclick="$('.encodingAesKey').show();$('.encodingAesKey-edit').hide();$('input[name=\'encodingAesKey\']').val('{pigcms:$encodingAesKey}');">显示</span>
+		</span>
+		<span>&nbsp;&nbsp;公众号消息加解密Key</span>
+	</td>
+    </tr>
+  <tr>
+    <td  height="48" align="right"><strong>是否启用：</strong></td>
+    <td>
+      <input type="radio" name="type" id="open_tenpay_yes" value="1" <if condition="$site['type'] eq 1">checked="checked"</if>/>&nbsp;<label for="open_tenpay_yes">开启</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="type" id="open_tenpay_no" value="0" <if condition="$site['type'] eq 0">checked="checked"</if>/>&nbsp;<label for="open_tenpay_no">关闭</label>&nbsp;&nbsp;&nbsp;&nbsp;(需要点击“开启”才能正常使用此功能【注意：“全网发布接入检测”时需要暂时开启选项，通过检测完成后立即关闭，直到审核通过后重新开启，以免造成接口不能使用】)
+    </td>
+</tr>
+    <tr> 
+      <td height="48" colspan="2">
+      <div id="addkey"></div>
+      <div style="padding-left:100px;">
+      <input type="submit" value="保存设置" />
+      </div>
+    </td>
+    </tr>
+  </form>
+</table><br />
+<br />
+<br />
+
+</div>
+</body>
+</html>
